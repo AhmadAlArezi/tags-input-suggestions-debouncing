@@ -1,0 +1,81 @@
+.tagsInputContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  border: 2px solid #000;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  margin: 0.5rem;
+  cursor: text;
+}
+.tagItem {
+  display: flex;
+  background-color: rgb(200, 191, 207);
+  width: fit-content;
+  display: inline-block;
+  padding: 0.2rem 0.75rem;
+  border-radius: 2rem;
+}
+.close {
+  height: 20px;
+  width: 20px;
+  background-color: rgb(45, 37, 53);
+  border-radius: 50%;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  line-height: 22px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
+.close:hover {
+  background-color: rgb(167, 47, 11);
+}
+.input {
+  display: inline-block;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: rgb(45, 37, 53);
+  font-size: 1.2rem;
+  padding: 0.2rem 0.75rem;
+}
+.suggestionsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  border: 2px solid #000;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  margin: 0.5rem;
+  cursor: text;
+}
+.suggestionsContainer .suggestionItem {
+  display: flex;
+  background-color: rgb(200, 191, 207);
+  width: fit-content;
+  display: inline-block;
+  padding: 0.2rem 0.75rem;
+  border-radius: 2rem;
+}
+.suggestionsContainer .suggestionItem:hover {
+  background-color: rgb(154, 172, 166);
+}
+.suggestionsContainer .close:hover {
+  background-color: rgb(42, 167, 11);
+}
+
+.placeholder {
+  position: relative;
+}
+
+.placeholder::after {
+  position: absolute;
+  left: 11px;
+  top: 3px;
+  content: attr(data-placeholder);
+  pointer-events: none;
+  opacity: 0.6;
+  font-size: 1.2rem;
+}
